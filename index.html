@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<title>El Cofre del Viajero | Experiencias de Viajes</title> 
+        <link href="./style/styles.css" rel="stylesheet">
+        <link rel="icon" href="./images/icon.png">
+	</head>
+    
+    <body>
+        <header class="desktop">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul class="ul_nav">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="#">RESERVAR</a></li>
+                    <li><a href="#">CONTACTAR</a></li>
+                </ul>  
+            </nav>
+            <div>
+                <a class="button_nav_1" href="#">Iniciar Sesión</a>
+                <a class="button_nav_2" href="#">Registrarse</a>                
+            </div>
+        </header>
+
+        <header class="tablet_mobile">
+            <div class="dropdown">
+                <button onclick="dropButton()" class="menu-button">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html">INICIO</a>
+                    <a href="#">RESERVAR</a>
+                    <a href="#">CONTACTAR</a>
+                </div>
+            </div>
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <a class="button_nav_1" href="#">Login</a>
+        </header>
+
+        <main>
+            <div class="background-gold"> 
+            </div>
+            <div class="sec_1">
+                <div class=div_h1_map>
+                    <h1 class="h1_map">MAPA</h1>
+                </div>
+                <div class=div_map>
+                    <map name="places">
+                        <area shape="rect" coords="118,39,135,58" alt="Morrocoy" href="morrocoy.html"> 
+                        <area shape="rect" coords="168,59,186,78" alt="Humboldt" href="humboldt.html">
+                        <area shape="rect" coords="245,199,263,218" alt="Canaima" href="canaima.html">
+                    </map>
+                    <img class="map_venezuela" src="./images/mapa.png" alt="Mapa Venezuela" usemap="#places">
+                </div>
+            </div>
+            <div class="sec_2">
+                <h1>Encuentra Experiencias</h1>
+                <br>
+                <div class="sec_search">
+                    <form>
+                        <input class="input_search" type="text" id="buscador" name="buscador" placeholder="Buscar Experiencia">
+                    </form>
+                    <a class="button_search" href="#">Buscar</a>
+                </div>
+            </div>
+            <div class="sec_3">
+                <h1>Experiencias</h1>
+                <br>
+                <div class="columns">
+                    <div class="colum">
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp1.png" alt="Canaima"> 
+                            <h2 class="exp_text_title">Canaima
+                                <br>
+                                (Venezuela)
+                            </h2>  
+                            <p class="exp_text">
+                                Por su tamaño es considerado el sexto parque nacional más grande del mundo. 
+                                Está ocupado por mesetas de roca llamadas tepuyes.
+                            </p> 
+                        </div>
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp4.png" alt="Teide"> 
+                            <h2 class="exp_text_title">Teide
+                                <br>
+                                (Canarias)
+                            </h2>   
+                            <p class="exp_text">
+                                El Teide es un volcán situado en la isla española de Tenerife, en Canarias.
+                                Cuenta con una altitud oficial de 3715 metros.
+                            </p> 
+                        </div>
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp7.png" alt="Machu Picchu"> 
+                            <h2 class="exp_text_title">Machu Picchu
+                                <br>
+                                (Perú)
+                            </h2> 
+                            <p class="exp_text">
+                                Esta antigua ciudad inca es uno de los tesoros más preciados de Perú. 
+                                Esta joya es uno de los focos turísticos del país.
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp2.png" alt="Cayo de Agua">
+                            <h2 class="exp_text_title">Cayo de Agua
+                                <br>
+                                (Venezuela) 
+                            </h2> 
+                            <p class="exp_text">
+                                Cayo de Agua es popular dentro del archipiélago gracias a la belleza de 
+                                sus arenas blancas y playas solitarias.
+                            </p> 
+                        </div>
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp5.png" alt="Maspalomas">
+                            <h2 class="exp_text_title">Maspalomas
+                                <br>
+                                (Canarias) 
+                            </h2> 
+                            <p class="exp_text">
+                                Declarado Reserva Natural Especial, Maspalomas esta conformada por 
+                                campo de Dunas, una Charca y un Palmeral. 
+                            </p> 
+                        </div>
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp8.png" alt="Jewel Changi">
+                            <h2 class="exp_text_title">Jewel Changi
+                                <br>
+                                (Singapur) 
+                            </h2>  
+                            <p class="exp_text">
+                                Jewel teje una experiencia de estar en la naturaleza con instalaciones 
+                                culturales y de ocio.
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp3.png" alt="Humboldt">
+                            <h2 class="exp_text_title">Hotel Humboldt
+                                <br>
+                                (Venezuela) 
+                            </h2>  
+                            <p class="exp_text">
+                                Ubicado en la cima del Cerro Ávila​ en Caracas, es un ícono en 
+                                la arquitectura venezolana por su diseño de vanguardia.
+                            </p> 
+                        </div>
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp6.png" alt="Sotavento">
+                            <h2 class="exp_text_title">Sotavento
+                                <br>
+                                (Canarias) 
+                            </h2>  
+                            <p class="exp_text">
+                                Sotavento se encuentra envuelta por inmensas dunas bañadas por 
+                                aguas calmadas, cristalinas e inalterables.
+                            </p> 
+                        </div>
+                        <div class="experience">
+                            <img class="exp_img" src="./images/exp9.png" alt="Lagos de Plitvice">
+                            <h2 class="exp_text_title">Lagos de Plitvice
+                                <br>
+                                (Croacia) 
+                            </h2>  
+                            <p class="exp_text">
+                                En este hermoso parque existe un ecosistema único, en el que se han 
+                                registrado unas 70 especies de aves propias de la zona.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p class="foot_text_1">El Cofre del Viajero</p>  
+            <div class="div_footer_parent">
+                <div class="div_footer_child">
+                    <p class="foot_text_2">FAQ</p>
+                    <img class="social_icons" src="./images/social_instagram.png.png" alt="Instagram">
+                    <img class="social_icons" src="./images/social_youtube.png.png" alt="Youtube">
+                    <img class="social_icons" src="./images/social_facebook.png.png" alt="Facebook">
+                </div>
+                <div class="div_footer_child">
+                    <p class="foot_text_2">Terminos y Condiciones</p>
+                </div>
+            </div>       
+        </footer>
+
+        <script>
+            /*Botón Menú*/
+            function dropButton() 
+            {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Cerrar botón al tocar fuera
+            window.onclick = function(event) 
+            {
+                if (!event.target.matches('.menu-button')) 
+                {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) 
+                    {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) 
+                        {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Morrocoy</title> 
+        <link href="./style/styles.css" rel="stylesheet">
+        <link rel="icon" href="./images/icon.png">
+	</head>
+
+    <body>
+        <header class="desktop">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul class="ul_nav">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="#">RESERVAR</a></li>
+                    <li><a href="#">CONTACTAR</a></li>
+                </ul>  
+            </nav>
+            <div>
+                <a class="button_nav_1" href="#">Iniciar Sesión</a>
+                <a class="button_nav_2" href="#">Registrarse</a>                
+            </div>
+        </header>
+
+        <header class="tablet_mobile">
+            <div class="dropdown">
+                <button onclick="dropButton()" class="menu-button">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html">INICIO</a>
+                    <a href="#">RESERVAR</a>
+                    <a href="#">CONTACTAR</a>
+                </div>
+            </div>
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <a class="button_nav_1" href="#">Login</a>
+        </header>
+
+        <main>
+            <div class="ubi_sec_1">
+                <img class="ubi_sec_1_img" src="./images/ubi2.png" alt="Morrocoy">
+                <div class="ubi_sec_1_text">
+                    <h1>Morrocoy</h1>
+                    <p class="ubi_text">
+                        El Parque Nacional Morrocoy es uno de los destinos turísticos favoritos por presentar uno de los más 
+                        extraordinarios escenarios tropicales del territorio venezolano. El Parque Nacional Morrocoy está conformado 
+                        por cayos o islotes, y se encuentra ubicado en el Estado Falcón, entre las localidades de Tucacas y Chichiriviche.
+                        Este parque abarca tanto las zonas terrestres como las acuáticas del Golfo Triste, que está situado en la parte 
+                        meridional del Mar Caribe, y su gran extensión de aguas y costa.
+                        <br>
+                        <br>
+                        Las actividades turísticas abundan enormemente en el Parque Nacional Morrocoy, siendo los principales protagonistas 
+                        sus cayos y playas. Muchos de los turistas se acercan a estas cristalinas aguas a través de sus embarcaciones y
+                        otros eligen acampar. Es una zona bastante segura, ya que es vigilada constantemente por el organismo Inparques.
+                        En este lugar podrá disfrutar de los servicios turísticos que ofrecen los lugareños, como el alquiler de toldos y  
+                        sillas, baños, podrá comer en cualquiera de los dos deliciosos restaurantes que allí se encuentran.
+                    </p>
+                </div>
+            </div>
+            <div class="ubi_sec_2">
+                <div class="columns_2">
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi2.1.png" alt="Morrocoy"> 
+                        <iframe class="media" title="ubi.2.6" src="https://www.youtube.com/embed/ZeX1AP1_jHQ"></iframe>
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi2.2.png" alt="Morrocoy"> 
+                        <iframe class="media" title="ubi.2.7" src="https://www.youtube.com/embed/4eZzzD_IvV0"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi2.3.png" alt="Morrocoy"> 
+                        <iframe class="media" title="ubi.2.8" src="https://www.youtube.com/embed/3vLPjlo8vzU"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi2.4.png" alt="Morrocoy"> 
+                        <iframe class="media" title="ubi.2.9" src="https://www.youtube.com/embed/3m4qwpHNzyk"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi2.5.png" alt="Morrocoy"> 
+                        <iframe class="media" title="ubi.2.10" src="https://www.youtube.com/embed/Y_9KRlv9VCY"></iframe> 
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="foot_text_1">El Cofre del Viajero</p>  
+            <div class="div_footer_parent">
+                <div class="div_footer_child">
+                    <p class="foot_text_2">FAQ</p>
+                    <img class="social_icons" src="./images/social_instagram.png.png" alt="Instagram">
+                    <img class="social_icons" src="./images/social_youtube.png.png" alt="Youtube">
+                    <img class="social_icons" src="./images/social_facebook.png.png" alt="Facebook">
+                </div>
+                <div class="div_footer_child">
+                    <p class="foot_text_2">Terminos y Condiciones</p>
+                </div>
+            </div>       
+        </footer>
+        <script>
+            /*Botón Menú*/
+            function dropButton() 
+            {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Cerrar botón al tocar fuera
+            window.onclick = function(event) 
+            {
+                if (!event.target.matches('.menu-button')) 
+                {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) 
+                    {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) 
+                        {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }  
+        </script>
+    </body>
+</html>

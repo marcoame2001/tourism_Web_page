@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Canaima</title> 
+        <link href="./style/styles.css" rel="stylesheet">
+        <link rel="icon" href="./images/icon.png">
+	</head>
+
+    <body>
+        <header class="desktop">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul class="ul_nav">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="#">RESERVAR</a></li>
+                    <li><a href="#">CONTACTAR</a></li>
+                </ul>  
+            </nav>
+            <div>
+                <a class="button_nav_1" href="#">Iniciar Sesión</a>
+                <a class="button_nav_2" href="#">Registrarse</a>                
+            </div>
+        </header>
+
+        <header class="tablet_mobile">
+            <div class="dropdown">
+                <button onclick="dropButton()" class="menu-button">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html">INICIO</a>
+                    <a href="#">RESERVAR</a>
+                    <a href="#">CONTACTAR</a>
+                </div>
+            </div>
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <a class="button_nav_1" href="#">Login</a>
+        </header>
+
+        <main>
+            <div class="ubi_sec_1">
+                <img class="ubi_sec_1_img" src="./images/ubi1.png" alt="Canaima">
+                <div class="ubi_sec_1_text">
+                    <h1>Canaima</h1>
+                    <p class="ubi_text">
+                        En el parque Nacional Canaima, es donde se encuentran los famosos tepuyes, esas montañas de cumbres planas,
+                        que se presentan majestuosas en el horizonte, y que ofrecen unos ecosistemas realmente únicos,
+                        debido al aislamiento que produce su mayor altura con el resto de la sabana. En esas cumbres el clima es mucho
+                        más frío y húmedo debido a que las nubes se acumulan sobre ellas y producen un microclima especial, 
+                        relativamente fresco cuando cubiertas, pero de una fuerte insolación expuestas al sol.
+                        <br>
+                        <br>
+                        Quizás una de las cosas que más resalta en este parque, son sus ríos, y los saltos de agua como el Aponguao
+                        y el Kamarata. Algunas de las zonas del parque, solo son accesibles por aire en avión, o navegando
+                        en canoas a lo largo de interesantes ríos.Más de 300 especies endémicas sólo en la Gran Sabana.
+                        Abundantes especies carnívoras (insectívoras) de los géneros: Bromelia, Drosera, Heliamphora y Utricularia
+                        Paisajes dominados por grandes formaciones selváticas casi impenetrables.
+
+                    </p>
+                </div>
+            </div>
+            <div class="ubi_sec_2">
+                <div class="columns_2">
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi1.1.png" alt="Canaima"> 
+                        <iframe class="media" title="ubi.1.6" src="https://www.youtube.com/embed/pMPlV8Dq_xg"></iframe>
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi1.2.png" alt="Canaima"> 
+                        <iframe class="media" title="ubi.1.7" src="https://www.youtube.com/embed/gvRYxc5Pguk"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi1.3.png" alt="Canaima"> 
+                        <iframe class="media" title="ubi.1.8" src="https://www.youtube.com/embed/7pzlVbkEGHw"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi1.4.png" alt="Canaima"> 
+                        <iframe class="media" title="ubi.1.9" src="https://www.youtube.com/embed/9TZxxp7S8C0"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi1.5.png" alt="Canaima"> 
+                        <iframe class="media" title="ubi.1.10" src="https://www.youtube.com/embed/41-w9QpRmrw"></iframe> 
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="foot_text_1">El Cofre del Viajero</p>  
+            <div class="div_footer_parent">
+                <div class="div_footer_child">
+                    <p class="foot_text_2">FAQ</p>
+                    <img class="social_icons" src="./images/social_instagram.png.png" alt="Instagram">
+                    <img class="social_icons" src="./images/social_youtube.png.png" alt="Youtube">
+                    <img class="social_icons" src="./images/social_facebook.png.png" alt="Facebook">
+                </div>
+                <div class="div_footer_child">
+                    <p class="foot_text_2">Terminos y Condiciones</p>
+                </div>
+            </div>       
+        </footer>
+        <script>
+            /*Botón Menú*/
+            function dropButton() 
+            {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Cerrar botón al tocar fuera
+            window.onclick = function(event) 
+            {
+                if (!event.target.matches('.menu-button')) 
+                {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) 
+                    {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) 
+                        {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Humboldt</title> 
+        <link href="./style/styles.css" rel="stylesheet">
+        <link rel="icon" href="./images/icon.png">
+	</head>
+
+    <body>
+        <header class="desktop">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul class="ul_nav">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="#">RESERVAR</a></li>
+                    <li><a href="#">CONTACTAR</a></li>
+                </ul>  
+            </nav>
+            <div>
+                <a class="button_nav_1" href="#">Iniciar Sesión</a>
+                <a class="button_nav_2" href="#">Registrarse</a>                
+            </div>
+        </header>
+
+        <header class="tablet_mobile">
+            <div class="dropdown">
+                <button onclick="dropButton()" class="menu-button">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html">INICIO</a>
+                    <a href="#">RESERVAR</a>
+                    <a href="#">CONTACTAR</a>
+                </div>
+            </div>
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <a class="button_nav_1" href="#">Login</a>
+        </header>
+
+        <main>
+            <div class="ubi_sec_1">
+                <img class="ubi_sec_1_img" src="./images/ubi3.png" alt="Humboldt">
+                <div class="ubi_sec_1_text">
+                    <h1>Hotel Humboldt</h1>
+                    <p class="ubi_text">
+                        El Hotel Humboldt es un símbolo de una Venezuela que ya no existe.Muy impresionante es el paisaje amplio de
+                        Un anhelo de una década donde el país ostentaba poderío desarrollo urbano y riqueza petrolera.
+                        El hotel de lujo lo inauguró el dictador Marcos Pérez Jiménez en 1956, un militar que duró seis años en el poder
+                        que murió huido en Alcobendas, España; y cuya obsesión era construir piezas arquitectónicas únicas,de aspiración
+                        majestuosa que parecieran imposibles sobre el plano y sobre la tierra.
+                        <br>
+                        <br>
+                        La única manera de llegar hasta allí arriba es a través del teleférico, que inauguró el propio Pérez Jiménez
+                        un año antes de la apertura del cinco estrellas. Desde el principio, el hotel fue concebido desde un punto de vista
+                        de estrategia militar. El teleférico permitía movilizar hasta a 800 soldados en una hora para hospedarse en el hotel
+                        fortaleza si fuese necesario para defenderse de cualquier atacante. Y desde su cumbre se vigilan dos paisajes
+                        diferentes: de un lado, la gran ciudad, Caracas; del otro, las playas del Estado La Guaira.
+
+                    </p>
+                </div>
+            </div>
+            <div class="ubi_sec_2">
+                <div class="columns_2">
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi3.1.png" alt="Humboldt"> 
+                        <iframe class="media" title="ubi.3.6" src="https://www.youtube.com/embed/8tRS9YNyJw0"></iframe>
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi3.2.png" alt="Humboldt"> 
+                        <iframe class="media" title="ubi.3.7" src="https://www.youtube.com/embed/l5R10-HHxiU"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi3.3.png" alt="Humboldt"> 
+                        <iframe class="media" title="ubi.3.8" src="https://www.youtube.com/embed/w7JctzpLoNg"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi3.4.png" alt="Humboldt"> 
+                        <iframe class="media" title="ubi.3.9" src="https://www.youtube.com/embed/tGTcejvwDrQ"></iframe> 
+                    </div>
+                    <div class="colum_2">
+                        <img class="media" src="./images/ubi3.5.png" alt="Humboldt"> 
+                        <iframe class="media" title="ubi.3.10" src="https://www.youtube.com/embed/h5QBnjNdw0g"></iframe> 
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="foot_text_1">El Cofre del Viajero</p>  
+            <div class="div_footer_parent">
+                <div class="div_footer_child">
+                    <p class="foot_text_2">FAQ</p>
+                    <img class="social_icons" src="./images/social_instagram.png.png" alt="Instagram">
+                    <img class="social_icons" src="./images/social_youtube.png.png" alt="Youtube">
+                    <img class="social_icons" src="./images/social_facebook.png.png" alt="Facebook">
+                </div>
+                <div class="div_footer_child">
+                    <p class="foot_text_2">Terminos y Condiciones</p>
+                </div>
+            </div>       
+        </footer>
+        
+        <script>
+            /*Botón Menú*/
+            function dropButton() 
+            {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Cerrar botón al tocar fuera
+            window.onclick = function(event) 
+            {
+                if (!event.target.matches('.menu-button')) 
+                {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) 
+                    {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) 
+                        {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }  
+        </script>
+    </body>
+</html>
